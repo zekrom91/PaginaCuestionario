@@ -1,0 +1,359 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background-image: url(../images/bg2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+main{
+    width: 100%;
+    padding: 20px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.contenedor__todo{
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    position: relative;
+}
+.caja__trasera{
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    backdrop-filter: blur(10px);
+    background-color: rgba(20, 34, 238, 0.3);
+}
+.caja__trasera div{
+    margin: 100px 40px;
+    color:white;
+    transition: all 500ms;
+}
+.caja__trasera div p,
+.caja__trasera div button{
+    margin-top: 30px;
+}
+
+.caja__trasera div h3{
+    font-weight: 400;
+    font-size: 26px;
+}
+
+.caja__trasera button{
+    padding: 10px 40px;
+    border: 2px solid  #fff;
+    background: transparent;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    outline: none;
+    color: white;
+    transition: all 300 ms;
+}
+.caja__trasera button:hover{
+    background: #fff;
+    color: #46A2FD;
+}
+/*Formularios*/
+
+.contenerdor__login-register{
+    display:flex;
+    align-items: center;
+    width: 100%;
+    max-width: 380px;
+    position: relative;
+    top: -185px;
+    left: 10px;
+
+    transition: left 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
+}
+.contenerdor__login-register form{
+    width: 100%;
+    padding: 80px 20px;
+    background: #fff;
+    position: absolute;
+    border-radius: 20px;
+}
+.contenerdor__login-register form h2{
+    font-size:30px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: rgb(16, 105, 207);
+}
+
+.contenerdor__login-register form input{
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    background: #f2f2f2;
+    font-size: 16px;
+    outline: none;
+}
+.contenerdor__login-register form button{
+    padding: 10px 40px;
+    margin-top: 40px;
+    border: none;
+    font-size: 14px;
+    background: #46A2FD;
+    color: white;
+    cursor: pointer;
+    outline: none;
+}
+.formulario__login{
+    opacity: 1;
+    display: block;
+}
+.formulario__register{
+    display:none;
+}
+/* Trabajando en la pestana de formularios*/
+.contenerdor__cuestionario{
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    position: relative;
+    background-color: rgba(18, 142, 180, 0.3);
+    transition: left 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
+}
+.contenerdor__cuestionario form{
+    width: 100%;
+    padding: 80px 20px;
+    background: #fff;
+    position: absolute;
+    border-radius: 30px;
+}
+
+.contenerdor__cuestionario form input  {
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    color:#535252;
+    background: #e6e6e6;
+    font-size: 16px;
+    outline: none;
+    border-radius: 30px;
+}
+
+.contenerdor__cuestionario form label {
+    width: 100%;
+    margin-top: 20px;
+    border: none;
+    font-size: 16px;
+    outline: none;
+    padding: 0 0.4em;
+}
+.contenerdor__cuestionario form h1{
+    font-size:22px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: rgb(240, 241, 243);
+    
+}
+.contenerdor__cuestionario form h10{
+    font-size:18px;
+    text-align: center;
+    margin-bottom: 30px;
+    color: rgb(6, 22, 248);
+    font-weight: bolder;
+    
+}
+.contenerdor__cuestionario form h11{
+    font-size:18px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-style: italic;
+    font-weight: bolder;
+    color: rgb(1, 6, 12);
+    background-color: #bfc8d1;
+}
+
+.contenerdor__cuestionario div button{
+    margin-top: 30px;
+}
+.contenerdor__cuestionario form button{
+    padding: 10px 40px;
+    margin-top: 40px;
+    border: none;
+    font-size: 14px;
+    background: #46A2FD;
+    color: white;
+    cursor: pointer;
+    outline: none;
+}
+.contenerdor__cuestionario button:hover{
+    background: #fff;
+    color: #46A2FD;
+}
+
+.contenerdor__gracias form h2{
+    font-weight: 400;
+    font-size: 26px;
+}
+/*** Estilo del radio y chekbox***/
+label {
+	font-weight: 200;
+	color: #535252;
+	margin-bottom: 8px;
+	width: 80%;
+	float: left;
+	cursor: pointer;
+	padding: 0 0.4em;
+	box-sizing: border-box;
+	background: #e6e6e6;
+	transition: all 0.5s ease 0s;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+	display: none;
+}
+
+input[type="radio"] + label,
+input[type="checkbox"] + label {
+	line-height: 3em;
+}
+
+input[type="radio"] + label {
+	border-radius: 40px;
+}
+
+input[type="radio"]:disabled + label,
+input[type="checkbox"]:disabled + label {
+	color: #ccc !important;
+	cursor: not-allowed;
+}
+input[type="radio"]:checked:disabled + label:after,
+input[type="checkbox"]:checked:disabled + label:after {
+	border-color: #ccc;
+}
+
+input[type="radio"] + label:before,
+input[type="checkbox"] + label:before {
+	content: "";
+	width: 26px;
+	height: 26px;
+	float: left;
+	margin-right: 0.5em;
+	border: 2px solid #ccc;
+	background: #fff;
+	margin-top: 0.5em;
+}
+input[type="radio"] + label:before {
+	border-radius: 100%;
+}
+
+input[type="radio"]:checked + label,
+input[type="checkbox"]:checked + label {
+	background: #c1e0ee;
+}
+
+input[type="radio"]:checked + label:after {
+	content: "";
+	width: 0;
+	height: 0;
+	border: 7px solid #0967be;
+	float: left;
+	margin-left: -1.85em;
+	margin-top: 1em;
+	border-radius: 100%;
+}
+input[type="checkbox"]:checked + label:after {
+	content: "";
+	width: 12px;
+	height: 6px;
+	border: 4px solid #0fbf12;
+	float: left;
+	margin-left: -1.95em;
+	border-right: 0;
+	border-top: 0;
+	margin-top: 1em;
+	transform: rotate(-55deg);
+}
+
+input[type="radio"]:checked + label:before,
+input[type="checkbox"]:checked + label:before {
+	border-color: #0967be;
+}
+
+input[type="radio"]:checked:disabled + label,
+input[type="checkbox"]:checked:disabled + label {
+	background: #ccc;
+	color: #fff !important;
+}
+
+input[type="radio"]:checked:disabled + label:before,
+input[type="checkbox"]:checked:disabled + label:before {
+	border-color: #bdbdbd;
+}
+
+input[type =  "file"] #foto{
+    width: 0.1px;
+ height: 0.1px;
+ opacity: 0;
+ overflow: hidden;
+ position: absolute;
+ z-index: -1;
+}
+label[for="foto"] {
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    background-color: #106BA0;
+    display: inline-block;
+    transition: all .5s;
+    cursor: pointer;
+    padding: 15px 40px;
+    text-transform: uppercase;
+    width: fit-content;
+    text-align: center;
+}
+
+
+/*trabajando en el responsive design*/
+
+@media screen and (max-width: 850px){
+    main{
+        margin-top: 50px;
+    }
+    .caja__trasera{
+        max-width: 350px;
+        height: 300px;
+        flex-direction: column;
+        margin: auto;
+    }
+    .caja__trasera div{
+        margin: 0px;
+        position: absolute;
+    }
+    
+    /*formularios*/
+    .contenerdor__login-register{
+        top: -10px;
+        left: 5px;
+        margin: auto;
+    }
+    .contenerdor__login-register form{
+        position: relative;
+    }
+    .contenerdor__cuestionario{
+        top: -10px;
+        left: 5px;
+        margin: auto;
+    }
+    .contenerdor__cuestionario{
+        position: relative;
+    }
+}
